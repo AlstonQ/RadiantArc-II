@@ -10,7 +10,7 @@ function Navbar() {
     <a class="navbar-brand brand-logo" href="./index.html">
                 <img
                   class="img-fluid"
-                  src="./images/BrandLogo-dark (2).svg"
+                  src="./images/BrandLogo-light.jpeg"
                   alt=""
                   srcset=""
                 />
@@ -45,17 +45,17 @@ function Navbar() {
               <li class="nav-item ms-md-1">
                 <a class="nav-link" href="./Blog.html">Blog</a>
               </li>
-              <li class="nav-item mx-md-1">
-                <a class="nav-link" href="./contact.html">Contact us</a>
-              </li>
-            </ul>
-            <a
+              <li>
+              <a
               target="_"
               href="https://github.com/imShivam579/Agency-Website"
               class="btn btn-outline-warning rounded-pill bg-brand-primayfaint"
             >
-              Clone App
+              Contact Us
             </a>
+              </li>
+            </ul>
+           
           </div>
     `;
   navbar.appendChild(div);
