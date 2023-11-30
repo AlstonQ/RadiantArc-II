@@ -10,7 +10,7 @@ function Footer() {
     <div class="brand-logo">
       <img
         class=""
-        src="./images/BrandLogo-light (1).svg"
+        src="./images/BrandLogo-light.jpeg"
         alt="beandLogo"
         type="images/svg"
       />
@@ -40,8 +40,8 @@ function Footer() {
     <div class="col-6 col-sm-5 col-lg-3">
       <div class="fw-6">Connect</div>
       <div class="row gy-2 mt-2">
-        <div><a href="#">hi@beezzly.com</a></div>
-        <div><a href="#">+(123) 456-7890</a></div>
+        <div><a href="mailto:sooraj@radiant-arc.com">Email</a></div>
+        <div><a href="tel:+91 98213 68587">Call</a></div>
       </div>
     </div>
     <div class="col-10 col-sm-10 col-lg-6">
