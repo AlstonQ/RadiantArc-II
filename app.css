@@ -19,13 +19,14 @@
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
   -o-transform: translateY(0%);
+  height : 17vh;
 }
 .team-detail {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: 70%;
+  min-height: 75%;
   background: #161616da;
   transform: translateY(100%);
   -webkit-transform: translateY(100%);

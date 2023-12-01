@@ -35,6 +35,7 @@ function showReview() {
                   src="https://static.wixstatic.com/media/7c7fcc_6f32f814ff5d49bc94a9e99f14831a73~mv2.png"
                   alt=""
                   srcset=""
+                  style="filter: revert;"
                 />
               </a>
             </div>
