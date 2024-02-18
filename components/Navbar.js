@@ -32,23 +32,27 @@ function Navbar() {
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="./aboutUs.html"
-                  >About Us</a
-                >
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item ms-md-1">
-                <a class="nav-link" href="./careers.html">Carrers</a>
+                <a class="nav-link" href="./index.html#features-section">Services</a>
+              </li>
+            <li class="nav-item ms-md-1">
+                <a class="nav-link" href="./index.html#about-section">About Us</a>
               </li>
               <li class="nav-item ms-md-1">
-                <a class="nav-link" href="./service.html">Services</a>
+                <a class="nav-link" href="./index.html#team-section">The Team</a>
               </li>
               <li class="nav-item ms-md-1">
-                <a class="nav-link" href="./Blog.html">Blog</a>
+                <a class="nav-link" href="./index.html#logos-section">Our Clients</a>
               </li>
-              <li>
+                <li class="nav-item ms-md-1">
+                <a class="nav-link" href="./index.html#videoSection">Testimonials</a>
+              </li>
+              <li class="nav-item ms-md-1">
               <a
               target="_"
-              href="https://github.com/imShivam579/Agency-Website"
+              href="./contact.html"
               class="btn btn-outline-warning rounded-pill bg-brand-primayfaint"
             >
               Contact Us

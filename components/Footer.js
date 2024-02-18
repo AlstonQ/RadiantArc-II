@@ -10,7 +10,7 @@ function Footer() {
     <div class="brand-logo">
       <img
         class=""
-        src="./images/BrandLogo-light.jpeg"
+        src="./images/Logo-White.png"
         alt="beandLogo"
         type="images/svg"
       />
@@ -19,22 +19,27 @@ function Footer() {
   <div class="brand-tagline h2 my-3 w-75">
     Bespoke software solutions
   </div>
+  <!-- 
   <div class="brand-socials my-3 mt-4">
-    <a href="#" class="mx-2"> <i class="bi bi-facebook"></i></a>
-    <a href="#" class="mx-2"> <i class="bi bi-youtube"></i></a>
-    <a href="#" class="mx-2"> <i class="bi bi-instagram"></i></a>
-    <a href="#" class="mx-2"> <i class="bi bi-twitter"></i></a>
-  </div>
+     <a href="#" class="mx-2"> <i class="bi bi-facebook"></i></a>
+     <a href="#" class="mx-2"> <i class="bi bi-youtube"></i></a>
+     <a href="#" class="mx-2"> <i class="bi bi-instagram"></i></a>
+     <a href="#" class="mx-2"> <i class="bi bi-twitter"></i></a>
+   </div>
+  -->
 </div>
 <div class="col-12 col-md-7 col-lg-7">
   <div class="row gy-5">
     <div class="col-6 col-sm-5 col-lg-3">
       <div class="fw-6">Company</div>
       <div class="row gy-2 mt-2">
-        <div><a href="#">About Us</a></div>
-        <div><a href="#">Careers</a></div>
-        <div><a href="#">Services</a></div>
-        <div><a href="#">Blog</a></div>
+        <div><a href="./index.html">Home</a></div>
+        <div><a href="./index.html#features-section">Services</a></div>
+        <div><a href="./index.html#about-section">About Us</a></div>
+        <div><a href="./index.html#team-section">The Team</a></div>
+        <div><a href="./index.html#logos-section">Our Clients</a></div>
+        <div><a href="./index.html#videoSection">Testimonials</a></div>
+        <div><a href="./contact.html">Contact Us</a></div>
       </div>
     </div>
     <div class="col-6 col-sm-5 col-lg-3">
