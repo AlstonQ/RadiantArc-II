@@ -82,6 +82,9 @@
     height: auto; 
     width: 100%;
 }
+.form-control {
+  color: #FFFFFF;
+}
 
 .logo-body {
   flex: 1 1 auto;
