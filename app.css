@@ -5,12 +5,28 @@
 }
 
   .gif-background1 {
-    width: 400px; /* Adjust the width and height as needed */
-    height: 300px;
+    width: 100%; /* Adjust the width and height as needed */
+    height: 100%;
     background-image: url('bg2.gif'); /* Replace 'yourgif.gif' with the path to your GIF */
-    background-size: cover; /* Adjust as needed */
-    background-repeat: no-repeat; /* Adjust as needed */
+    background-size: 100%; /* Adjust as needed */
+    background-repeat: repeat; /* Adjust as needed */
   }
+  .gif-background2 {
+    width: 100%; /* Adjust the width and height as needed */
+    height: 100%;
+    background-image: url('bg1.gif'); /* Replace 'yourgif.gif' with the path to your GIF */
+    background-size: 100%; /* Adjust as needed */
+    background-repeat: repeat; /* Adjust as needed */
+  }
+
+  .gif-background3 {
+    width: 100%; /* Adjust the width and height as needed */
+    height: 100%;
+    background-image: url('bg3.gif'); /* Replace 'yourgif.gif' with the path to your GIF */
+    background-size: 100%; /* Adjust as needed */
+    background-repeat: repeat; /* Adjust as needed */
+  }
+
 
 .video-container {
   position: fixed;
@@ -150,15 +166,13 @@
   color: #f58a07 !important;
   background: rgba(245, 138, 7, 0.1) !important;
 }
-.bg-bluefaint {
-  background-color: #392E69 !important;
-}
+
 .bg-blue-200 {
   background: rgba(210, 218, 237, 0.17) !important;
 }
-.bg-bluelight {
+/* .bg-bluelight {
   background-color: #2f1444;
-}
+} */
 .bg-blueDark {
   background: #a4a4a4;
 }
