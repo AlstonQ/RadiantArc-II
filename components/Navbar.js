@@ -4,7 +4,7 @@ Navbar();
 function Navbar() {
   navbar.innerHTML = "";
   const div = document.createElement("div");
-  div.classList.add("container");
+  div.classList.add("navbar");
   div.classList.add("justify-");
   div.innerHTML = `
     <a class="navbar-brand brand-logo" href="./index.html">

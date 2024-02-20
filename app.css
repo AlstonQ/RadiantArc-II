@@ -3,6 +3,26 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays above other content */
+  /* Add any other styles you need for your navbar */
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(30px); /* Move the element down by 50px initially */
+  transition: opacity 1.2s ease, transform 0.8s ease; /* Apply transitions for smoother animation */
+}
+/* Define the animation when the element becomes visible */
+.container.animate {
+  opacity: 1;
+  transform: translateY(0); /* Reset the position */
+}
+
 /* Brand Logo  */
 .brand-logo {
   max-width: 140px;
@@ -26,7 +46,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: 75%;
+  min-height: 70%;
   background: #161616da;
   transform: translateY(100%);
   -webkit-transform: translateY(100%);
@@ -44,6 +64,11 @@
   flex: 1 1 auto;
   padding: 1rem 1rem;
   background: #000000;
+  transition: transform 0.3s ease;
+}
+
+.card-body:hover {
+  transform: scale(1.2); /* Scale the image by 1.1 on hover (increase size) */
 }
 
 .client-logo {
@@ -188,14 +213,31 @@ a.cl-blue-900:hover {
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
-      align-items: center;
-      justify-content: center;
+    align-items: center;
+    justify-content: center;
+    /* For animation */
+    opacity: 60;
+    transform: translateY(20px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .logo-item.animate {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .logo-item img {
     width: 100%;
     height: auto;
     display:flex;
+  }
+  .logo-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Fade-in animation for text */
+  .text-container.animate {
+    opacity: 1;
+    transform: translateY(0);
   }
 
 .p-tr {

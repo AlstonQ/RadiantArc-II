@@ -60,6 +60,7 @@
       <div class="container">
         <div class="row gy-3 gy-md-5">
           <div class="text-container col-12">
+            <br>
             <div class="text-wrapper row row-cols-2 gy-3">
               <h3 class="col col-12 col-md-6">
                 For your every challenge,<br>
@@ -253,8 +254,8 @@
                   <div class="team-detail b-6 p-3 p-lg-4">
                     <span class="cl-white opacity-75">CEO</span>
                     <h4 class="cl-white my-2">Sooraj Punjabi</h4>
-                    <p class="cl-white opacity-75 my-3">
-                      Expert in sales, solutioning and customer satisfaction.
+                    <span class="cl-white opacity-75">Chief Executive Officer</span>
+                    <br>
                     </p>
                     <div class="social-bar">
                       <a href="mailto:you@example.com">
@@ -273,10 +274,10 @@
                 <div class="overflow-hidden position-relative b-6">
                   <img class="img-fit-cover b-6" src="./images/AboutUs-teampost2.png" alt="" srcset="" />
                   <div class="team-detail b-6 p-3 p-lg-4">
-                    <span class="cl-white opacity-75">CCSO</span>
+                    <span class="cl-white opacity-75">CCO</span>
                     <h4 class="cl-white my-2">Himanshu Goyal</h4>
-                    <p class="cl-white opacity-75 my-3">
-                      Expertise in Business and Customer Management.
+                    <span class="cl-white opacity-75">Chief Customer Officer</span>
+                    <br>
                     </p>
                     <div class="social-bar">
                       <a href="mailto:you@example.com">
@@ -297,8 +298,8 @@
                   <div class="team-detail b-6 p-3 p-lg-4">
                     <span class="cl-white opacity-75">CTO</span>
                     <h4 class="cl-white my-2">Viren Gaikwad</h4>
-                    <p class="cl-white opacity-75 my-3">
-                      User Experience, Design and Innovative Technology.
+                    <span class="cl-white opacity-75">Chief Technology Officer</span>
+                    <br>
                     </p>
                     <div class="social-bar">
                       <a href="mailto:you@example.com">
@@ -319,8 +320,8 @@
                   <div class="team-detail b-6 p-3 p-lg-4">
                     <span class="cl-white opacity-75">COO</span>
                     <h4 class="cl-white my-2">Alston Quadros</h4>
-                    <p class="cl-white opacity-75 my-3">
-                      Sales, Development, Marketing, Security and Legal
+                    <span class="cl-white opacity-75">Chief Operating Officer</span>
+                    <br>
                     </p>
                     <div class="social-bar">
                       <a href="mailto:you@example.com">
@@ -358,11 +359,12 @@
           </div>
         </div>
         <div class="text-container col-12">
-          <div class="text-wrapper row row-cols-2 gy-3">
-            <h3 class="col col-12 col-md-6">
-              Our Partners
-            </h3>
-          </div>
+          <br><br>
+          <h3 class="col col-12" align ="center">
+            Our Partners
+          </h3>
+          <!-- <div class="text-wrapper row row-cols-2 gy-3">
+          </div> -->
         </div>
         <div>
           <div class="logo-container">
@@ -380,17 +382,16 @@
               <img class="client-logo" src="./images/NidhiAndMihir.png" type="image/svg" alt="" />
             </div>
           </div>
-
-
-
         </div>
 
         <div class="text-container col-12">
-          <div class="text-wrapper row row-cols-2 gy-3">
+          <br><br>
+          <h3 class="col col-12" align ="center">  Our Clients</h3>
+          <!-- <div class="text-wrapper row row-cols-2 gy-3">
             <h3 class="col col-12 col-md-6">
               Our Clients
             </h3>
-          </div>
+          </div> -->
         </div>
         <div class="logo-container">
           <div class="logo-item px-4 py-5">
@@ -427,12 +428,10 @@
           <div class="logo-item px-4 py-5">
             <img class="client-logo" src="./images/HOC.png" type="image/svg" alt="" />
           </div>
-
-
         </div>
       </div>
-
     </section>
+
     <!-- Testimonials Section  -->
     <section id="videoSection" class="container-fluid py-5" style="background: #000000;"></section>
     <!-- Footer  -->
@@ -450,6 +449,39 @@
   <script src="./components/Posts.js"></script>
   <!--  Component : videoSection -->
   <script src="./components/VideoSection.js"></script>
+
+  <!-- For animation of Divs-->
+  <script>
+    // Function to check if any part of an element is in the viewport
+    function isAnyPartOfElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+      var windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+    
+      var vertInView = (rect.top <= windowHeight * 0.8) && ((rect.top + rect.height) >= 0.1 * windowHeight);
+      var horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+    
+      return (vertInView && horInView);
+    }
+    
+    // Function to add animation class when any part of the element is in viewport
+    function animateOnScroll() {
+      var elements = document.querySelectorAll('.container');
+      elements.forEach(function(el) {
+        if (isAnyPartOfElementInViewport(el)) {
+          el.classList.add('animate');
+        }
+      });
+    }
+    
+    // Add scroll event listener to trigger animation
+    window.addEventListener('scroll', animateOnScroll);
+    
+    // Initially trigger animation for elements in viewport on page load
+    animateOnScroll();
+    </script>
+    
 </body>
 
 </html>
