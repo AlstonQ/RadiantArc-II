@@ -51,8 +51,7 @@ function Navbar() {
               </li>
               <li class="nav-item ms-md-1">
               <a
-              target="_"
-              href="./contact.html"
+              href="./index.html#ContactUs"
               class="btn btn-outline-warning rounded-pill bg-brand-primayfaint"
             >
               Contact Us
