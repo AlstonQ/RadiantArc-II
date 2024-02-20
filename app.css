@@ -10,6 +10,8 @@
   width: 100%;
   z-index: 1000; /* Ensure the navbar stays above other content */
   /* Add any other styles you need for your navbar */
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .container {
