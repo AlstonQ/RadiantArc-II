@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.card {
+  background-color : #0000ff00;
+}
+
   .gif-background1 {
     width: 100%; /* Adjust the width and height as needed */
     height: 100%;
@@ -105,10 +109,13 @@
   -o-transition: transform ease-in-out 500ms;
 }
 
+.card {
+  background-color : #0000ff00;
+}
+
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
-  background: #392E69;
   transition: transform 0.3s ease;
 }
 
