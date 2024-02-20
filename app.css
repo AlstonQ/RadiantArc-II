@@ -30,6 +30,11 @@
 .team-post {
   cursor: pointer;
 }
+
+.mt-3 {
+  margin-top: 0;
+}
+
 .mt-4 {
   margin-top: none;
 }
@@ -201,7 +206,7 @@ a.cl-blue-900:hover {
 
 .logo-container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     max-width: 1200px;
     margin: 0 auto;

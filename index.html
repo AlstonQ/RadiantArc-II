@@ -147,14 +147,14 @@
             </p>
             <div class="row row-cols-2 mt-5">
               <div class="col-12 col-sm-6">
-                <span class="h2 cl-primary"> 10+ </span>
+                <span class="h2 cl-primary" id = "counter1"> 10+ </span>
                 <h5 class="">Customers</h5>
                 <p class="">
                   Customers across the Globe for Law, Shoes, Medical, Digital Agencies, Liquor, Clothing and many more.
                 </p>
               </div>
               <div class="col-12 col-sm-6">
-                <span class="h2 cl-primary"> 1000+ </span>
+                <span class="h2 cl-primary" id = "counter2"> 1000+ </span>
                 <h5 class=" ">Audience Reached</h5>
                 <p class="  ">
                   Assisted Customer reach wider Global Audience through SEO & Marketing via various customer choosen
@@ -394,6 +394,11 @@
           </div> -->
         </div>
         <div class="logo-container">
+
+          <div class="logo-item px-4 py-5">
+            <img class="client-logo" src="./images/Rudra.png" alt="" />
+          </div>
+
           <div class="logo-item px-4 py-5">
             <img class="client-logo" src="./images/trumpet.png" alt="" />
           </div>
@@ -418,9 +423,12 @@
               src="https://suspire.in/cdn/shop/files/Primary_Typographic_Logo_Green_1-min_140x@2x.png?v=1653113123"
               type="image/svg" alt="" />
           </div>
+            <div class="logo-item px-4 py-5">
+              <img class="client-logo" src="./images/HOC.png" type="image/svg" alt="" />
+            </div>
 
         </div>
-        <div class="logo-container">
+        <!-- <div class="logo-container">
           <div class="logo-item px-4 py-5">
             <img class="client-logo" src="./images/Rudra.png" alt="" />
           </div>
@@ -428,7 +436,7 @@
           <div class="logo-item px-4 py-5">
             <img class="client-logo" src="./images/HOC.png" type="image/svg" alt="" />
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -444,15 +452,13 @@
             <div class="col-11">
               <div class="row">
                 <div class="col-12 col-md-6">
-                  <h1 class="cl-blue-900">
+                  <h1 class="cl-blue-900" style="margin-top: 2rem!important;">
                     Have a question ? Let’s get in touch with us.
                   </h1>
                   <p>
                     Fill up the Form and our team will get back to within 24 hrs
                   </p>
-                </div>
-                <div class="col-6 col-md-3">
-                  <div class="h5" style="color: #fff;">Contact Us</div>
+                  <div class="h5" style="color: #fff;padding-top: 25%;">Contact Us</div>
                   <ul class="list-unstyled">
                     <li>
                       <a href="tel:+4733378901">+47 333 78 901</a>
@@ -468,6 +474,91 @@
                     </li>
                   </ul>
                 </div>
+                <div class="col-12 col-md-6">
+                  <form class="row mt-3 g-3" action="https://docs.google.com/forms/d/e/1FAIpQLScsdxmebt6idGnffj7_yBQ5VhSzMzKU82Qo7jWOyeKXyCWBTw/formResponse" method="post" id="contactForm" name="contactForm" target="hidden_iframe" onsubmit="submitted=true;">
+                    <!-- <form class="row mt-3 g-3" method = "POST" action="https://script.google.com/macros/s/AKfycbx7V2AHwSIcsqwMNhvBGALRqtJG5F-AMRr53WSAfLA5T-XmMRs948-T5QlgMMLyQpPLrw/exec"> -->
+                      <div class="form-floating col-12">
+                        <input
+                          class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                          type="text"
+                          placeholder="First Name"
+                          id = "entry.1911689884"
+                          name = "entry.1911689884"
+                        />
+                        <label class="ms-3" for="floatingInput">First Name</label>
+                      </div>
+                      <div class="form-floating col-12">
+                        <input
+                          class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                          type="text"
+                          placeholder="Last Name"
+                          id = "entry.867593428"
+                          name = "entry.867593428"
+                        />
+                        <label class="ms-3" for="floatingInput">Last Name</label>
+                      </div>
+                      <div class="form-floating col-12">
+                        <input
+                          class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                          type="email"
+                          placeholder="Email Id"
+                          id = "entry.2022157412"
+                          name = "entry.2022157412"
+                        />
+                        <label class="ms-3" for="floatingInput">Email Id</label>
+                      </div>
+                      <div class="form-floating col-12">
+                        <input
+                          class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                          type="number"
+                          placeholder="Mobile Number"
+                          id = "entry.1396690988"
+                          name = "entry.1396690988"
+                        />
+                        <label class="ms-3" for="floatingInput">Mobile Number</label>
+                      </div>
+                      <div class="form-floating col-12">
+                        <textarea
+                          class="form-control border-0 bg-blue-200 b-6 px-3"
+                          placeholder="Leave a comment here"
+                          id="floatingTextarea2"
+                          style="height: 140px; resize: none"
+                          id = "entry.194596254"
+                          name = "entry.194596254"
+                        ></textarea>
+                        <label class="ms-3" for="floatingInput">Type message</label>
+                      </div>
+                      <div class="col-12 mb-3 pt-3">
+                        <button
+                          id="applyFormSubmitBtn"
+                          type="submit"
+                          class="btn btn-warning rounded-pill bg-brand-primay px-5 py-2"
+                          value="Submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      
+                    <div id="messageSent" style="display: none;">
+                      Thank you for your Inquiry, we shall reach out to you Soon!
+                    </div>
+      
+                    <script>
+                    document.getElementById("contactForm").addEventListener("submit", function(event) {
+                      // Prevent the default form submission behavior
+                      event.preventDefault();
+                      
+                      // Show the message div
+                      document.getElementById("messageSent").style.display = "block";
+                      document.getElementById("messageSent").color = "white";
+      
+                      // Hide the Form
+                      document.getElementById("contactForm").style.display = "none";
+                    });
+                    </script>
+                </div>
               </div>
             </div>
           </div>
@@ -478,90 +569,7 @@
         <div class="container">
           <div class="row g-5">
             <div class="col-12 col-md-8">
-              <form class="row mt-3 g-3" action="https://docs.google.com/forms/d/e/1FAIpQLScsdxmebt6idGnffj7_yBQ5VhSzMzKU82Qo7jWOyeKXyCWBTw/formResponse" method="post" id="contactForm" name="contactForm" target="hidden_iframe" onsubmit="submitted=true;">
-              <!-- <form class="row mt-3 g-3" method = "POST" action="https://script.google.com/macros/s/AKfycbx7V2AHwSIcsqwMNhvBGALRqtJG5F-AMRr53WSAfLA5T-XmMRs948-T5QlgMMLyQpPLrw/exec"> -->
-                <div class="form-floating col-12">
-                  <input
-                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
-                    type="text"
-                    placeholder="First Name"
-                    id = "entry.1911689884"
-                    name = "entry.1911689884"
-                  />
-                  <label class="ms-3" for="floatingInput">First Name</label>
-                </div>
-                <div class="form-floating col-12">
-                  <input
-                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
-                    type="text"
-                    placeholder="Last Name"
-                    id = "entry.867593428"
-                    name = "entry.867593428"
-                  />
-                  <label class="ms-3" for="floatingInput">Last Name</label>
-                </div>
-                <div class="form-floating col-12">
-                  <input
-                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
-                    type="email"
-                    placeholder="Email Id"
-                    id = "entry.2022157412"
-                    name = "entry.2022157412"
-                  />
-                  <label class="ms-3" for="floatingInput">Email Id</label>
-                </div>
-                <div class="form-floating col-12">
-                  <input
-                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
-                    type="number"
-                    placeholder="Mobile Number"
-                    id = "entry.1396690988"
-                    name = "entry.1396690988"
-                  />
-                  <label class="ms-3" for="floatingInput">Mobile Number</label>
-                </div>
-                <div class="form-floating col-12">
-                  <textarea
-                    class="form-control border-0 bg-blue-200 b-6 px-3"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea2"
-                    style="height: 140px; resize: none"
-                    id = "entry.194596254"
-                    name = "entry.194596254"
-                  ></textarea>
-                  <label class="ms-3" for="floatingInput">Type message</label>
-                </div>
-                <div class="col-12 mb-3 pt-3">
-                  <button
-                    id="applyFormSubmitBtn"
-                    type="submit"
-                    class="btn btn-warning rounded-pill bg-brand-primay px-5 py-2"
-                    value="Submit"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
-              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-              <div id="messageSent" style="display: none;">
-                Thank you for your Inquiry, we shall reach out to you Soon!
-              </div>
-
-              <script>
-              document.getElementById("contactForm").addEventListener("submit", function(event) {
-                // Prevent the default form submission behavior
-                event.preventDefault();
-                
-                // Show the message div
-                document.getElementById("messageSent").style.display = "block";
-                document.getElementById("messageSent").color = "white";
-
-                // Hide the Form
-                document.getElementById("contactForm").style.display = "none";
-              });
-              </script>
-          </div>
+              
           </div>
         </div>
       </div>
@@ -614,6 +622,38 @@
     // Initially trigger animation for elements in viewport on page load
     animateOnScroll();
     </script>
+
+    <!-- Animation for Number Counter -->
+    <script>
+      // Get the counter elements
+      var counterElement1 = document.getElementById("counter1");
+      var counterElement2 = document.getElementById("counter2");
+      
+      // Function to animate the counter
+      function animateCounter(target, start, end, duration) {
+        let startTime = null;
+      
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const progress = timestamp - startTime;
+          const percentage = Math.min(progress / duration, 1);
+          const value = Math.floor(percentage * (end - start) + start);
+          target.textContent = value >= end ? end + "+" : value;
+          if (progress < duration && value < end) {
+            requestAnimationFrame(step);
+          }
+        }
+      
+        requestAnimationFrame(step);
+      }
+      
+      // Animate the first counter from 1 to 10
+      animateCounter(counterElement1, 1, 10, 1400); // Change duration (in milliseconds) as needed
+      
+      // Animate the second counter from 1 to 1000
+      animateCounter(counterElement2, 1, 1000, 1400); // Change duration (in milliseconds) as needed
+      
+      </script>
     
 </body>
 
