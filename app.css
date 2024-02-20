@@ -348,7 +348,8 @@ form label {
 @media (max-width: 768px) {
   .logo-container {
     flex:0 0 auto;
-    width:100%
+    width:100%;
+    flex-wrap: wrap;
   }  
   
   .logo-item {
