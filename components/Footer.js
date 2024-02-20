@@ -39,7 +39,7 @@ function Footer() {
         <div><a href="./index.html#team-section">The Team</a></div>
         <div><a href="./index.html#logos-section">Our Clients</a></div>
         <div><a href="./index.html#videoSection">Testimonials</a></div>
-        <div><a href="./contact.html">Contact Us</a></div>
+        <div><a href="./index.html#Contact-Us">Contact Us</a></div>
       </div>
     </div>
     <div class="col-6 col-sm-5 col-lg-3">

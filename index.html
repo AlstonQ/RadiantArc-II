@@ -434,9 +434,142 @@
 
     <!-- Testimonials Section  -->
     <section id="videoSection" class="container-fluid py-5" style="background: #000000;"></section>
+
+    <!-- Contact Us Section-->
+    <!--  -->
+    <section id="Contact-Us" class="container-fluid py-5" style="background: #2f1444;">
+      <div class="bg-bluelight container-fluid py-5 light-bg overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col-11">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <h1 class="cl-blue-900">
+                    Have a question ? Let’s get in touch with us.
+                  </h1>
+                  <p>
+                    Fill up the Form and our team will get back to within 24 hrs
+                  </p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="h5" style="color: #fff;">Contact Us</div>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="tel:+4733378901">+47 333 78 901</a>
+                    </li>
+                    <li>
+                      <a href="tel:+4733378901">+47 333 78 901</a>
+                    </li>
+                    <li>
+                      <a href="mailto:sooraj@radiant-arc.com">sooraj@radiant-arc.com</a>
+                    </li>
+                    <li>
+                      <a href="mailto:himanshu@radiant-arc.com">himanshu@radiant-arc.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact section  -->
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-12 col-md-8">
+              <form class="row mt-3 g-3" action="https://docs.google.com/forms/d/e/1FAIpQLScsdxmebt6idGnffj7_yBQ5VhSzMzKU82Qo7jWOyeKXyCWBTw/formResponse" method="post" id="contactForm" name="contactForm" target="hidden_iframe" onsubmit="submitted=true;">
+              <!-- <form class="row mt-3 g-3" method = "POST" action="https://script.google.com/macros/s/AKfycbx7V2AHwSIcsqwMNhvBGALRqtJG5F-AMRr53WSAfLA5T-XmMRs948-T5QlgMMLyQpPLrw/exec"> -->
+                <div class="form-floating col-12">
+                  <input
+                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                    type="text"
+                    placeholder="First Name"
+                    id = "entry.1911689884"
+                    name = "entry.1911689884"
+                  />
+                  <label class="ms-3" for="floatingInput">First Name</label>
+                </div>
+                <div class="form-floating col-12">
+                  <input
+                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                    type="text"
+                    placeholder="Last Name"
+                    id = "entry.867593428"
+                    name = "entry.867593428"
+                  />
+                  <label class="ms-3" for="floatingInput">Last Name</label>
+                </div>
+                <div class="form-floating col-12">
+                  <input
+                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                    type="email"
+                    placeholder="Email Id"
+                    id = "entry.2022157412"
+                    name = "entry.2022157412"
+                  />
+                  <label class="ms-3" for="floatingInput">Email Id</label>
+                </div>
+                <div class="form-floating col-12">
+                  <input
+                    class="form-control border-0 bg-blue-200 rounded-pill px-3"
+                    type="number"
+                    placeholder="Mobile Number"
+                    id = "entry.1396690988"
+                    name = "entry.1396690988"
+                  />
+                  <label class="ms-3" for="floatingInput">Mobile Number</label>
+                </div>
+                <div class="form-floating col-12">
+                  <textarea
+                    class="form-control border-0 bg-blue-200 b-6 px-3"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 140px; resize: none"
+                    id = "entry.194596254"
+                    name = "entry.194596254"
+                  ></textarea>
+                  <label class="ms-3" for="floatingInput">Type message</label>
+                </div>
+                <div class="col-12 mb-3 pt-3">
+                  <button
+                    id="applyFormSubmitBtn"
+                    type="submit"
+                    class="btn btn-warning rounded-pill bg-brand-primay px-5 py-2"
+                    value="Submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+              <div id="messageSent" style="display: none;">
+                Thank you for your Inquiry, we shall reach out to you Soon!
+              </div>
+
+              <script>
+              document.getElementById("contactForm").addEventListener("submit", function(event) {
+                // Prevent the default form submission behavior
+                event.preventDefault();
+                
+                // Show the message div
+                document.getElementById("messageSent").style.display = "block";
+                document.getElementById("messageSent").color: "white";
+
+                // Hide the Form
+                document.getElementById("contactForm").style.display = "none";
+              });
+              </script>
+          </div>
+          </div>
+        </div>
+      </div>
+  </section>
     <!-- Footer  -->
     <footer id="footer" class="container-fluid bg-footer py-5 dark-bg"></footer>
   </div>
+
   <!-- Bootstrap CDN link  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
