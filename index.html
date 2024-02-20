@@ -345,7 +345,7 @@
       </div>
     </div>
 
-    <section id="logos-section" class="container-fluid py-5 light-bg" style="background-color: #280237;">
+    <section id="logos-section" class="container-fluid py-5 light-bg" style="background-color: #392E69;">
       <div class="container">
         <div class="row gy-3 gy-md-5">
           <div class="text-container col-12">
@@ -412,7 +412,7 @@
               alt="" />
           </div>
 
-          <div class="logo-item px-4 py-5">
+          <div class="logo-item px-4 py-5" style="filter: invert(1);">
             <img class="client-logo" src="./images/BFLLWellness.png" type="image/svg" alt="" />
           </div>
 
@@ -421,7 +421,7 @@
           </div>
 
 
-          <div class="logo-item px-4 py-5">
+          <div class="logo-item px-4 py-5" style="filter: invert(1);">
             <img class="client-logo"
               src="https://suspire.in/cdn/shop/files/Primary_Typographic_Logo_Green_1-min_140x@2x.png?v=1653113123"
               type="image/svg" alt="" />
@@ -633,9 +633,16 @@
 
     <!-- Animation for Number Counter -->
     <script>
-      // Get the counter elements
-      var counterElement1 = document.getElementById("counter1");
-      var counterElement2 = document.getElementById("counter2");
+      // Function to check if an element is in the viewport
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
       
       // Function to animate the counter
       function animateCounter(target, start, end, duration) {
@@ -655,13 +662,30 @@
         requestAnimationFrame(step);
       }
       
-      // Animate the first counter from 1 to 10
-      animateCounter(counterElement1, 1, 10, 1400); // Change duration (in milliseconds) as needed
+      // Get the counter elements
+      var counterElement1 = document.getElementById("counter1");
+      var counterElement2 = document.getElementById("counter2");
       
-      // Animate the second counter from 1 to 1000
-      animateCounter(counterElement2, 1, 1000, 1400); // Change duration (in milliseconds) as needed
+      // Function to animate the counter when it becomes visible
+      function animateWhenVisible() {
+        if (isElementInViewport(counterElement1)) {
+          animateCounter(counterElement1, 1, 10, 1000);
+        }
+        if (isElementInViewport(counterElement2)) {
+          animateCounter(counterElement2, 1, 1000, 1000);
+        }
+      }
+      
+      // Trigger animation when the page loads
+      animateWhenVisible();
+      
+      // Listen for scroll events to trigger animation when the counters come into view
+      window.addEventListener('scroll', function() {
+        animateWhenVisible();
+      });
       
       </script>
+      
     
 </body>
 

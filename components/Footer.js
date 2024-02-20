@@ -31,7 +31,6 @@ function Footer() {
 <div class="col-12 col-md-7 col-lg-7">
   <div class="row gy-5">
     <div class="col-6 col-sm-5 col-lg-3">
-      <div class="fw-6">Company</div>
       <div class="row gy-2 mt-2">
         <div><a href="./index.html">Home</a></div>
         <div><a href="./index.html#features-section">Services</a></div>
@@ -43,7 +42,6 @@ function Footer() {
       </div>
     </div>
     <div class="col-6 col-sm-5 col-lg-3">
-      <div class="fw-6">Connect</div>
       <div class="row gy-2 mt-2">
         <div><a href="mailto:sooraj@radiant-arc.com">Email</a></div>
         <div><a href="tel:+91 98213 68587">Call</a></div>

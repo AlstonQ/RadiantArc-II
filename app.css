@@ -53,7 +53,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: 70%;
+  min-height: 55%;
   background: #161616da;
   transform: translateY(100%);
   -webkit-transform: translateY(100%);
@@ -70,9 +70,10 @@
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
-  background: #000000;
+  background: #392E69;
   transition: transform 0.3s ease;
 }
+
 
 .card-body:hover {
   transform: scale(1.2); /* Scale the image by 1.1 on hover (increase size) */
@@ -128,7 +129,7 @@
   background: rgba(245, 138, 7, 0.1) !important;
 }
 .bg-bluefaint {
-  background-color: #000000 !important;
+  background-color: #392E69 !important;
 }
 .bg-blue-200 {
   background: rgba(210, 218, 237, 0.17) !important;
@@ -351,7 +352,7 @@ form label {
     width:100%;
     flex-wrap: wrap;
   }  
-  
+
   .logo-item {
       flex-basis: 48%;
     }
@@ -378,5 +379,14 @@ form label {
     .team-detail p {
       font-size: 12px;
     }
+
+    .social-bar{
+      display: none;
+    }
+
+    .team-post:hover .team-detail {
+      height: 17vh;
+  }
+  
 
   }
